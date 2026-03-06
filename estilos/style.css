@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #DADADB;
+    --cor02: #0B1A45;
+    --cor03: #7595BF;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background:  url(../imagens/bgimage.jpg) top center no-repeat;
+    background-size: cover;
+    background-color: var(--cor02); 
+    min-height: 100vh;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section#txt {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+p {
+    max-width: 350px;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    text-shadow: 2px 3px 4px var(--cor02);
+    
+}
+
+section#login {
+    height: 60vh;
+    
+}
+
+#form {
+    background-color: var(--cor01);
+    
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form h1 {
+    color: var(--cor02);
+    text-shadow: 2px 2px 3px #7595bfd0;
+    margin-bottom: 40px;
+}
+
+label {
+    display: none;
+}
+
+.input {
+    background-color: white;
+    padding: 9px;
+    width: 75vw;
+    max-width: 450px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.input:focus {
+    outline: 2px solid var(--cor03); /* Adiciona um contorno usando a sua variável de cor */
+    box-shadow: 0px 0px 10px rgba(117, 149, 191, 0.4); /* Cria um efeito de "brilho" suave */
+    background-color: #f4f6f9;
+}
+
+.input::placeholder {
+    text-indent: 10px;
+}
+
+#btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    max-width: 450px;
+    margin: 10px auto;
+}
+
+#forgot {
+    color: var(--cor02);
+    align-self: flex-end;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#forgot:hover {
+    text-decoration: underline;
+}
+
+#btn-entrar {
+    background-color: var(--cor03);
+    color: var(--cor02);
+    border: none;
+    border-radius: 30px;
+    width: 75vw;
+    max-width: 450px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+#btn-entrar:hover {
+    color: white;
+    background-color: var(--cor02);
+}
+

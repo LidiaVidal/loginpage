@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    
+    body {
+        background-image: linear-gradient(to left, var(--cor02), var(--cor03));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        max-width: 1000px; /* Evita que o cartão fique gigante em telas ultrawide */
+        height: 80vh; /* Altura fixa do cartão */
+        background-color: var(--cor01);
+        border-radius: 20px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Sombra 3D */
+        overflow: hidden;
+        
+    }
+
+    section#txt {
+        text-align: left;
+        padding: 40px;
+        min-width: 40vw;
+        text-align: left;
+        height: 80vh;
+        background: url(../imagens/bgimage.jpg) no-repeat;
+  
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    section#login {
+        flex: 1; /* Ocupa os outros 50% do cartão */
+        height: 100%;
+        
+    }
+
+    #form {
+        background-color: var(--cor01);
+        border-radius: 0px 20px 20px 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+
+    .input {
+        background-color: white;
+        padding: 7px;
+        width: 25vw;
+        margin: 10px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1rem;
+    }
+
+    #btn {
+        font-size: 1rem;
+        width: 25vw;
+    }
+
+    #btn-entrar {
+        width: 25vw;
+        padding: 7px;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+}
